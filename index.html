@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Bootsrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
+</head>
+<body>
+    <nav class="navbar navbar-dark bg-primary">
+        <div class="container justify-content-center">
+            <a href="" class="navbar-brand">Döviz Çevirici</a>
+        </div>
+    </nav>
+    <div class="container my-5 mx-5>">
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <div class="mb-3">
+                    <input type="text" class="form-control" id="currency_one" list="list_one" placeholder="Çevirmek İstediğiniz Para Birimi">
+                    <datalist id="list_one"></datalist>
+                    <!-- ******ÖNEMLİ******* <datalist> etiketi <input> etiketi için önceden tanımlanmış açılabilir liste tanımlar.<datalist> etiketi "otomatik tamamlama" özelliğini tanımlar. Kullanıcı veri girişi yaptığında önceden tanımlanmış açılabilir liste gözükecektir.<datalist> etiketi <input> etiketine bağlanırken input etiketinin list özelliği kullanılır.-->
+                </div>
+                <div class="mb-3">
+                    <input type="text" class="form-control" id="currency_two" list="list_two" placeholder="Döviz Kuru">
+                    <datalist id="list_two"></datalist>
+                </div>
+                <div class="mb-3">
+                    <input type="number" class="form-control" id="amount" placeholder="Miktar">
+                </div>
+                <button class="btn btn-outline-primary w-100 mb-3" id="calculate">Hesapla</button>
+                <div id="result">
+                    <!-- <div class="card border-primary">
+                        <div class="card-body text-center" style="font-size:30px;">
+                            100$ = 1850₺
+                        </div> -->
+                </div>
+                <!-- <div id="another-results">
+                    <div class="card border-secondary">
+                        <div class="card-body text-center" style="font-size:30px;">
+                            <div class="d-flex flex-column">
+                                <span>a</span>
+                                <hr />
+                                <span>b</span>
+                                <hr />
+                                <span>c</span>
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+    </div> 
+
+
+
+
+
+    
+    <script src="./script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
+</body>
+</html> 
